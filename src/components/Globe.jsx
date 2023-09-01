@@ -15,7 +15,7 @@ const Globe = () => {
     <>
     <ambientLight intensity={3}/>
     <mesh>
-        <sphereGeometry args={[1.005,32,32]}/>
+        <sphereGeometry args={[1.005,50,50]}/>
         <meshPhongMaterial
         map={cloudMap}
         opacity={0.4}
@@ -25,7 +25,7 @@ const Globe = () => {
         />
     </mesh>
     <mesh>
-        <sphereGeometry args={[1,32,32]}/>
+        <sphereGeometry args={[1,50,50]}/>
         <meshPhongMaterial specularMap={specularMap}/>
         <meshStandardMaterial map={earthMap} normalMap={colorMap}/>
         <OrbitControls enableZoom={true} enablePan={true} enableRotate={true} zoomSpeed={0.6} panSpeed={0.5} rotateSpeed={0.4}/>

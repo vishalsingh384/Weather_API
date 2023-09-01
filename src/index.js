@@ -11,7 +11,7 @@ root.render(
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<App/>}/>
-      <Route path='/globe' element={<Canvas><Suspense fallback={null}><Globe/></Suspense></Canvas>}/>
+      <Route path='/globe' element={<Canvas style={{height:window.innerHeight,width:window.innerWidth}}><Suspense fallback={null}><Globe/></Suspense></Canvas>}/>
     </Routes>
     </BrowserRouter>
 );
