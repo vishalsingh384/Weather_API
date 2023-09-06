@@ -1,10 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import {Canvas} from '@react-three/fiber';
-import {Suspense} from 'react';
 
 const CardWeather = ({data,icon}) => {
-    console.log(data);
     const handleDate = (d) => {
         let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
