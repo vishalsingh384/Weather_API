@@ -5,9 +5,6 @@ import CardWeather from './components/CardWeather';
 
 function App() {
 
-  
-
-  
   const [data, setData] = useState({});
   const [query, setQuery] = useState('');
   const [innerbg, setInnnerBg] = useState('');
@@ -16,6 +13,7 @@ function App() {
   
   useEffect(()=>{
     fetchWeather();
+    // eslint-disable-next-line
   },[]);
 
   const fetchWeather=async ()=>{
@@ -27,7 +25,6 @@ function App() {
         setIcon(iconUrl);
         setQuery('');
       }else{
-        // console.log('hello');
         setData({});
       }
   }
